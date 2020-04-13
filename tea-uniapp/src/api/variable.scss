@@ -1,0 +1,129 @@
+@mixin bg-image($url){
+    background-image: url("../../static/#{$url}.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media (-webkit-min-device-pixel-ratio: 3),(min-device-pixel-ratio: 3){
+      background-image: url("../../static/#{$url}@2x.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  @mixin bg-image-size($url){
+    background-image: url("../../static/#{$url}.png");
+    background-repeat: no-repeat;
+    @media (-webkit-min-device-pixel-ratio: 3),(min-device-pixel-ratio: 3){
+      background-image: url("../../static/#{$url}@2x.png");
+      background-repeat: no-repeat;
+    }
+  }
+  @mixin bg-image-jpg($url){
+    background-image: url("../../static/#{$url}.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  @mixin bg-repeat($url, $url1) {
+    background-image: url('../../static/#{$url}.jpg'),
+      url('../../static/#{$url1}.jpg');
+    background-repeat: no-repeat, repeat;
+    @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+      background-image: url('../../static/#{$url}@2x.jpg'),
+        url('../../static/#{$url1}@2x.jpg');
+      background-repeat: no-repeat, repeat;
+    }
+  }
+  @mixin bg-repeat-png($url, $url1) {
+    background-image: url('../../static/#{$url}.png'),
+      url('../../static/#{$url1}.png');
+    background-repeat: no-repeat, repeat;
+    @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+      background-image: url('../../static/#{$url}@2x.png'),
+        url('../../static/#{$url1}@2x.png');
+      background-repeat: no-repeat, repeat;
+    }
+  }
+  // 超出多少行显示 省略号
+  @mixin text-over($line) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $line;
+    -webkit-box-orient: vertical;
+  }
+  //布局
+  .df{
+    display:flex;
+  }
+  .acenter{
+    align-items: center;
+  }
+  .jcenter{
+    justify-content: center;
+  }
+  //定位
+  .pr{
+    position: relative;
+  }
+  .pa{
+    position: absolute;
+  }
+  .pf{
+    position: fixed;
+  }
+  //层叠
+  .z10{
+    z-index: 10;
+  }
+  .z100{
+    z-index: 100;
+  }
+  .z1000{
+    z-index: 1000;
+  }
+  //字体
+  .f52{font-size:52px;}
+  .f50{font-size:50px;}
+  .f44{font-size:44px;}
+  .f42{font-size:42px;}
+  .f40{font-size:40px;}
+  .f38{font-size:38px;}
+  .f36{font-size:36px;}
+  .f34{font-size:34px;}
+  .f32{font-size:32px;}
+  .f30{font-size:30px;}
+  .f28{font-size:28px;}
+  .f26{font-size:26px;}
+  .f24{font-size:24px;}
+  .f22{font-size:22px;}
+  .f20{font-size:20px;}
+  .f18{font-size:18px;}
+  .f17{font-size:17px;}
+  .f16{font-size:16px;}
+  .f15{font-size:15px;}
+  .f14{font-size:14px;}
+  .f13{font-size:13px;}
+  .f12{font-size:12px;}
+  .f11{font-size:11px;}
+  .f10{font-size:10px;}
+  //字体颜色
+  .c2 {color: #222;}
+  .c3 {color: #333;}
+  .c6{color: #666;}
+  .c9{color: #999;}
+  .cf{color: #fff;}
+  .ctea{color: #D45949;}
+  
+  .fwb{font-weight: bold;}
+  .fw400{font-weight: 400;}
+  .fw500{font-weight: 500;}
+  .fw600{font-weight: 600;}
+  //居中
+  .tac{text-align: center;}
+  
+  .mauto{margin: 0 auto;}
+  
+  //文字超出后...
+  .tover{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }

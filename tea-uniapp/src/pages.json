@@ -1,0 +1,284 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "茶臻选商城",
+				"navigationStyle": "custom",
+				"usingComponents": {
+					"van-tab": "/wxcomponents/vant-weapp/tab/index",
+					"van-tabs": "/wxcomponents/vant-weapp/tabs/index",
+					"van-button": "/wxcomponents/vant-weapp/button/index"
+				}
+			}
+		},
+		{
+			"path": "pages/detail/detail",
+			"style": {
+				"usingComponents": {
+					"van-goods-action": "/wxcomponents/vant-weapp/goods-action/index",
+					"van-goods-action-icon": "/wxcomponents/vant-weapp/goods-action-icon/index",
+					"van-goods-action-button": "/wxcomponents/vant-weapp/goods-action-button/index",
+					"van-tag": "/wxcomponents/vant-weapp/tag/index",
+					"van-icon": "/wxcomponents/vant-weapp/icon/index",
+					"van-action-sheet": "/wxcomponents/vant-weapp/action-sheet/index"
+				}
+			}
+		},
+		{
+			"path": "pages/cart/cart",
+			"style": {
+				"navigationBarTitleText": "购物车",
+				"backgroundColor": "#F2F2F2",
+				"enablePullDownRefresh": true,
+				"usingComponents": {
+					"van-submit-bar": "/wxcomponents/vant-weapp/submit-bar/index",
+					"van-checkbox": "/wxcomponents/vant-weapp/checkbox/index"
+				}
+			}
+		},
+		{
+			"path": "pages/express/express",
+			"style": {
+				"navigationBarTitleText": "物流详情"
+			}
+		},
+		{
+			"path": "pages/chayu/chayu",
+			"style": {
+				"navigationBarTitleText": "茶语",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/type/type",
+			"style": {
+				"navigationBarTitleText": "分类",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/type/list",
+			"style": {
+				"navigationBarTitleText": "分类列表",
+				"enablePullDownRefresh": true,
+				"usingComponents": {
+					"van-sticky": "/wxcomponents/vant-weapp/sticky/index"
+				}
+			}
+		},
+		{
+			"path": "pages/self/user",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"navigationStyle": "custom",
+				"usingComponents": {
+					"van-button": "/wxcomponents/vant-weapp/button/index",
+					"van-cell": "/wxcomponents/vant-weapp/cell/index",
+					"van-cell-group": "/wxcomponents/vant-weapp/cell-group/index"
+				}
+			}
+		},
+		{
+			"path":"pages/activity/activity",
+			"style": {
+				"navigationBarTitleText": "活动",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/search/search",
+			"style": {
+				"navigationBarTitleText": "搜索",
+				"navigationStyle": "custom",
+				"usingComponents":{
+					"van-field": "/wxcomponents/vant-weapp/field/index",
+					"van-icon": "/wxcomponents/vant-weapp/icon/index"
+				}
+			}
+		},
+		{
+			"path": "pages/pay/paysure",
+			"style": {
+				"navigationBarTitleText": "确认订单",
+				"usingComponents": {
+					"van-field": "/wxcomponents/vant-weapp/field/index",
+					"van-switch": "/wxcomponents/vant-weapp/switch/index",
+					"van-button": "/wxcomponents/vant-weapp/button/index",
+					"van-icon": "/wxcomponents/vant-weapp/icon/index"
+				}
+			}
+		},
+		{
+			"path": "pages/pay/over",
+			"style": {
+				"navigationBarTitleText": "支付结果",
+				"usingComponents": {
+					"van-loading": "/wxcomponents/vant-weapp/loading/index"
+				}
+			}
+		},
+		{
+			"path": "pages/order/list",
+			"style": {
+				"navigationBarTitleText": "订单列表"
+			}
+		},
+		{
+			"path": "pages/order/detail",
+			"style": {
+				"navigationBarTitleText": "订单详情"
+			}
+		},
+		{
+			"path": "pages/self/foot",
+			"style": {
+				"navigationBarTitleText": "我的足迹"
+			}
+		},
+		{
+			"path": "pages/self/coll",
+			"style": {
+				"navigationBarTitleText": "我的收藏"
+			}
+		},
+		{
+			"path": "pages/self/addlist",
+			"style": {
+				"navigationBarTitleText": "地址列表"
+			}
+		},
+		{
+			"path": "pages/self/addselect",
+			"style": {
+				"navigationBarTitleText": "选择地址"
+			}
+		},
+		{
+			"path": "pages/self/adddetail",
+			"style": {
+				"navigationBarTitleText": "选择地址",
+				"usingComponents": {
+					"van-field": "/wxcomponents/vant-weapp/field/index",
+					// "van-radio": "/wxcomponents/vant-weapp/radio/index",
+					// "van-radio-group": "/wxcomponents/vant-weapp/radio-group/index",
+					"van-area": "/wxcomponents/vant-weapp/area/index"
+				}
+			}
+		}, 
+		{
+			"path": "pages/express/middle",
+			"style": {
+				"navigationBarTitleText": "物流信息"
+			}
+		},
+		{
+			"path": "pages/opera/special",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/opera/vouchers",
+			"style": {
+				"navigationBarTitleText": "天天领钱",
+				"usingComponents":{
+					"van-popup": "/wxcomponents/vant-weapp/popup/index",
+					"van-divider": "/wxcomponents/vant-weapp/divider/index"
+				}
+			}
+		},
+		{
+			"path": "pages/self/coupon",
+			"style": {
+				"navigationBarTitleText": "优惠券"
+			}
+		},
+		{
+			"path": "pages/self/detail",
+			"style": {
+				"navigationBarTitleText": "个人资料",
+				"usingComponents":{
+					"van-cell": "/wxcomponents/vant-weapp/cell/index",
+					"van-cell-group": "/wxcomponents/vant-weapp/cell-group/index"
+				}
+			}
+		},
+		{
+			"path":"pages/login/login",
+			"style":{
+				"navigationBarTitleText": "茶臻选",
+				"usingComponents": {
+					"van-button": "/wxcomponents/vant-weapp/button/index"
+				}
+			}
+		},
+		{
+			"path":"pages/login/inputcode",
+			"style":{
+				"navigationBarTitleText": "茶臻选"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "茶臻选商城",
+		"navigationBarBackgroundColor": "#fff",
+		"backgroundColor": "#F2F2F2",
+		"usingComponents": {
+			"van-action-sheet": "/wxcomponents/vant-weapp/action-sheet/index",
+			"van-stepper": "/wxcomponents/vant-weapp/stepper/index",
+			"van-goods-action": "/wxcomponents/vant-weapp/goods-action/index",
+			"van-goods-action-icon": "/wxcomponents/vant-weapp/goods-action-icon/index",
+			"van-goods-action-button": "/wxcomponents/vant-weapp/goods-action-button/index",
+			"van-checkbox": "/wxcomponents/vant-weapp/checkbox/index",
+			"van-icon": "/wxcomponents/vant-weapp/icon/index"
+		}
+	},
+	"tabBar": {
+		"color": "#333",
+		"selectedColor": "#333",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/footimg/home.png",
+				"selectedIconPath": "static/footimg/home-active.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/type/type",
+				"iconPath": "static/footimg/type.png",
+				"selectedIconPath": "static/footimg/type-active.png",
+				"text": "分类"
+			},
+			{
+				"pagePath": "pages/chayu/chayu",
+				"iconPath": "static/footimg/chayu.png",
+				"selectedIconPath": "static/footimg/chayu-active.png",
+				"text": "茶语"
+			},
+			{
+				"pagePath": "pages/cart/cart",
+				"iconPath": "static/footimg/cart.png",
+				"selectedIconPath": "static/footimg/cart-active.png",
+				"text": "购物车"
+			},
+			{
+				"pagePath": "pages/self/user",
+				"iconPath": "static/footimg/self.png",
+				"selectedIconPath": "static/footimg/self-active.png",
+				"text": "我的"
+			}
+		]
+	},
+	"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [{
+			"name": "", //模式名称
+			"path": "", //启动页面，必选
+			"query": "" //启动参数，在页面的onLoad函数里面得到
+		}]
+	}
+
+}

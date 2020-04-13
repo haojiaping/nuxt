@@ -1,0 +1,192 @@
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+ @import "./wxcomponents/vant-weapp/common/index.wxss";
+/* 颜色变量 */
+
+/* 行为相关颜色 */
+$uni-color-primary: #007aff;
+$uni-color-success: #4cd964;
+$uni-color-warning: #f0ad4e;
+$uni-color-error: #dd524d;
+
+/* 文字基本颜色 */
+$uni-text-color:#333;//基本色
+$uni-text-color-inverse:#fff;//反色
+$uni-text-color-grey:#999;//辅助灰色，如加载更多的提示信息
+$uni-text-color-placeholder: #808080;
+$uni-text-color-disable:#c0c0c0;
+
+/* 背景颜色 */
+$uni-bg-color:#ffffff;
+$uni-bg-color-grey:#f8f8f8;
+$uni-bg-color-hover:#f1f1f1;//点击状态颜色
+$uni-bg-color-mask:rgba(0, 0, 0, 0.4);//遮罩颜色
+
+/* 边框颜色 */
+$uni-border-color:#c8c7cc;
+
+/* 尺寸变量 */
+
+/* 文字尺寸 */
+$uni-font-size-sm:24upx;
+$uni-font-size-base:28upx;
+$uni-font-size-lg:32upx;
+
+/* 图片尺寸 */
+$uni-img-size-sm:40upx;
+$uni-img-size-base:52upx;
+$uni-img-size-lg:80upx;
+
+/* Border Radius */
+$uni-border-radius-sm: 4upx;
+$uni-border-radius-base: 6upx;
+$uni-border-radius-lg: 12upx;
+$uni-border-radius-circle: 50%;
+
+/* 水平间距 */
+$uni-spacing-row-sm: 10px;
+$uni-spacing-row-base: 20upx;
+$uni-spacing-row-lg: 30upx;
+
+/* 垂直间距 */
+$uni-spacing-col-sm: 8upx;
+$uni-spacing-col-base: 16upx;
+$uni-spacing-col-lg: 24upx;
+
+/* 透明度 */
+$uni-opacity-disabled: 0.3; // 组件禁用态的透明度
+
+/* 文章场景相关 */
+$uni-color-title: #2C405A; // 文章标题颜色
+$uni-font-size-title:40upx;
+$uni-color-subtitle: #555555; // 二级标题颜色
+$uni-font-size-subtitle:36upx;
+$uni-color-paragraph: #3F536E; // 文章段落颜色
+$uni-font-size-paragraph:30upx;
+
+
+@mixin bg-image($url) {
+  background-image: url("~@/static/"+$url+".png");
+  background-size: cover;
+  @media (-webkit-min-device-pixel-ratio: 3) and (min-device-pixel-ratio: 3) {
+    background-image: url("~@/static/"+$url+'@2x.png');
+  }
+}
+// 超出多少行显示 省略号
+@mixin text-over($line) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+}
+//布局
+.df{
+  display:flex;
+}
+.acenter{
+  align-items: center;
+}
+.jcenter{
+  justify-content: center;
+}
+//定位
+.pr{
+  position: relative;
+}
+.pa{
+  position: absolute;
+}
+.pf{
+  position: fixed;
+}
+//层叠
+.z10{
+  z-index: 10;
+}
+.z100{
+  z-index: 100;
+}
+.z1000{
+  z-index: 1000;
+}
+//字体
+.f52{font-size:52px;}
+.f50{font-size:50px;}
+.f44{font-size:44px;}
+.f42{font-size:42px;}
+.f40{font-size:40px;}
+.f38{font-size:38px;}
+.f36{font-size:36px;}
+.f34{font-size:34px;}
+.f32{font-size:32px;}
+.f30{font-size:30px;}
+.f28{font-size:28px;}
+.f26{font-size:26px;}
+.f24{font-size:24px;}
+.f22{font-size:22px;}
+.f20{font-size:20px;}
+.f18{font-size:18px;}
+.f17{font-size:17px;}
+.f16{font-size:16px;}
+.f15{font-size:15px;}
+.f14{font-size:14px;}
+.f13{font-size:13px;}
+.f12{font-size:12px;}
+.f11{font-size:11px;}
+.f10{font-size:10px;}
+//字体颜色
+.c3 {color: #333;}
+.c6{color: #666;}
+.c9{color: #999;}
+.cf{color: #fff;}
+.ctea{color: #D45949;}
+
+.fwb{font-weight: bold;}
+.fw400{font-weight: 400;}
+.fw500{font-weight: 500;}
+.fw600{font-weight: 600;}
+//居中
+.tac{text-align: center;}
+
+.mauto{margin: 0 auto;}
+
+
+/* 页面左右间距 */
+$page-row-spacing: 30upx;
+$page-color-base: #f8f8f8;
+$page-color-light: #f8f6fc;
+$base-color: #fa436a;
+
+/* 文字尺寸 */
+$font-sm: 24upx;
+$font-base: 28upx;
+$font-lg: 32upx;
+/*文字颜色*/
+$font-color-dark: #303133;
+$font-color-base: #606266;
+$font-color-light: #909399;
+$font-color-disabled: #C0C4CC;
+$font-color-spec: #4399fc;
+/* 边框颜色 */
+$border-color-dark: #DCDFE6;
+$border-color-base: #E4E7ED;
+$border-color-light: #EBEEF5;
+/* 图片加载中颜色 */
+$image-bg-color: #eee;
+/* 行为相关颜色 */
+$uni-color-primary:#fa436a;
+$uni-color-success: #4cd964;
+$uni-color-warning: #f0ad4e;
+$uni-color-error: #dd524d;
